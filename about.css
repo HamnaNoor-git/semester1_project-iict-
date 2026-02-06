@@ -1,0 +1,180 @@
+/* Custom properties for color consistency */
+:root {
+    --purple-main: #785cb3; 
+    --dark-purple: #330066;
+    --footer-header-bar: #5e4b8b; /* Deep Purple Bar */
+    --footer-content-bg: #fff0f5; /* Light Pale Pink Base */
+    --grid-line: #ffc0cb; /* Pink Grid Line Color */
+    --link-color: #5e4b8b;
+}
+body {
+    font-family: 'Inter', sans-serif, 'Kalnia';
+    background-color: white;
+    /* Pink Grid Background */
+    
+    background-size: 30px 30px;
+    color: #231c32;
+    overflow-x: hidden;
+}
+
+/* --- NAVBAR STYLES --- */
+.header-section {
+    background-color: #785cb3; 
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container img {
+   height: 80px; 
+   width: auto;
+   object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1);
+}
+/* General & Header Styles */
+
+.brand-text { color: white; line-height: 1; }
+.brand-title { font-size: 28px; margin: 0; }
+.brand-subtitle { font-size: 14px; margin: 0; }
+.nav-link { color: white !important; font-size: 16px; text-transform: uppercase; }
+.cart-icon img { filter: invert(1); width: 30px; }
+.fw-bold { font-weight: 700 !important; color:black; }
+
+/* Main Content: About Us */
+.about-title { color: var(--dark-purple); }
+.text-dark-purple { color: var(--dark-purple) !important; }
+.about-us-page ul li { margin-bottom: 5px; }
+
+/* =============================
+   FOOTER DESIGN
+============================= */
+
+/* 1. Subscription Banner */
+.sub-banner-link { text-decoration: none; }
+.sub-banner {
+    background-color: #f8b6ce; /* Pinkish banner */
+    text-align: center;
+    font-weight: 700;
+}
+.sub-banner p {
+    color: var(--dark-purple);
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* 2. Header Bar (Contact us | Information | Copyright) */
+.header-bar {
+    background-color: var(--footer-header-bar); 
+    color: white;
+    font-weight: 600;
+    padding: 12px 0;
+}
+.header-bar .fw-bold {
+    color: white !important; /* Ensure headers in the bar are white */
+    font-size: 1rem;
+}
+.copyright {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* 3. Content Area (Pink Grid Background) */
+.content-area {
+    /* Create the Pink Grid Pattern */
+    background-color: var(--footer-content-bg); 
+    background-image: 
+        linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+    background-size: 25px 25px; /* Adjust grid size */
+    padding: 25px 0;
+}
+
+/* Contact Details Styling */
+.contact-group { margin-bottom: 10px; }
+
+.label {
+    font-weight: 700;
+    color: #000;
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.contact-link, .text {
+    text-decoration: none;
+    color: var(--dark-purple);
+    font-size: 0.9rem;
+    display: block; /* Ensure text breaks below the label */
+}
+.contact-link:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+/* Information Links Styling */
+.info-links {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.info-links a:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 767.98px) {
+    /* Stack header items on mobile and center them */
+    .header-bar .row > div {
+        text-align: center !important;
+    }
+    .copyright {
+        margin-top: 10px;
+    }
+    
+    /* Ensure content columns stack neatly */
+    .content-area .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
