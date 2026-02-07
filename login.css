@@ -1,0 +1,319 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif,'kalnia';
+    /* This creates the Pink Grid Background from your screenshot */
+    background-color: white;
+  
+    background-size: 20px 20px;
+    color: #231c32;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+.header-section {
+    background-color: #785cb3; /* The Purple Header */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+}
+
+.logo-container img {
+   height: 80px; /* Adjusts logo height properly */
+    width: auto;  /* Keeps the shape correct */
+    object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Navigation */
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1); /* Makes black icon white */
+}
+
+/* Main Login Section Styles */
+.login-main {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.glow-text {
+    color: var(--glow-text-color);
+    font-weight: 700;
+}
+
+/* Custom Input Field Styling to match the purple background */
+.form-group-glow {
+    position: relative;
+    /* This container ensures the whole purple bar is behind the input */
+}
+.text-decoration-none {
+
+    color:#785cb3;
+}
+.forgot-link, .remember-link, .create-link {
+    color: var(--glow-purple-dark);
+    font-size: 0.9rem;
+}
+
+.input-glow {
+    /* Use the light purple background for the input fields */
+    background-color: var(--glow-purple-light);
+    border: none;
+    color: var(--white); /* Text color inside input */
+    padding: 1rem 1.5rem; /* Adjust padding to match height */
+    height: auto; /* Remove fixed Bootstrap height */
+    text-indent: 10px; /* Moves the text slightly right to look like a placeholder is being typed over */
+    font-size: 1.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.input-glow::placeholder {
+    color:#000(255, 255, 255, 0.8); /* Placeholder text color */
+}
+
+/* Hide the label as the placeholder text acts as the label */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Login/Create Links */
+.forgot-link, .remember-link, .create-link {
+    color: var(--glow-purple-dark);
+    font-size: 0.9rem;
+}
+
+.create-link {
+    font-weight: bold;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+/* Right Side Image Styling */
+.image-aside {
+    background-color: #f7f3fb; /* Light background behind the model/products */
+    overflow: hidden;
+    min-height: 100vh; /* Ensure the image section fills the viewport height */
+    position: relative;
+}
+
+.model-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 90vh; /* Adjust height for visual balance */
+    width: auto;
+}
+
+/* Subscription Banner */
+.subscription-banner {
+    background-color: var(--glow-purple-light);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Footer Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Helper Class for the Pink Grid Pattern */
+.grid-bg-pattern {
+    background-color: #fff0f5; /* Light pale pink base */
+    background-image: 
+        linear-gradient(#ffc0cb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffc0cb 1px, transparent 1px);
+    background-size: 25px 25px; /* Size of the grid squares */
+}
+
+/* Top Spacer */
+.grid-spacer {
+    height: 40px;
+    width: 100%;
+    /* Applying the grid pattern helper logic here */
+    background-color: #fff0f5;
+    background-image: 
+        linear-gradient(#ffc0cb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffc0cb 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+/* 1. Subscription Banner */
+.sub-banner-link {
+    text-decoration: none;
+}
+
+.sub-banner {
+    background-color: #f8b6ce; /* The specific pink from the screenshot */
+    color: #5e4b8b; /* Dark purple text */
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.sub-banner:hover {
+    background-color: #f5a3c0; /* Slight darken on hover */
+}
+
+/* 2. Header Bar (Purple) & 3. Content Area Layout */
+/* We use the same grid definition for both to ensure vertical alignment matches */
+.header-bar {
+    background-color: #5e4b8b; /* Deep Purple */
+    color: white;
+    padding: 12px 5%; /* Top/Bottom padding, 5% Side padding */
+}
+
+.content-area {
+    padding: 25px 5%;
+    /* Applying the grid pattern */
+    background-color: #fff0f5; 
+    background-image: 
+        linear-gradient(#ffc0cb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffc0cb 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+/* The Grid System: 3 Columns */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px;
+}
+
+/* Header Text Styling */
+.header-item {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.copyright {
+    text-align: right;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* Content Text Styling */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between Email, Phone, Address blocks */
+}
+
+/* Contact Details Styling */
+.contact-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: 700; /* Bold "Email:", "Phone:" */
+    color: #000;
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.contact-link, .text {
+    text-decoration: none;
+    color: #444; /* Dark gray text */
+    font-size: 0.9rem;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: #5e4b8b;
+}
+
+/* Information Links Styling */
+.info-links {
+    list-style: none;
+}
+
+.info-links li {
+    margin-bottom: 8px;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.info-links a:hover {
+    text-decoration: underline;
+    color: #5e4b8b;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack everything in 1 column on mobile */
+        gap: 30px;
+    }
+    
+    .header-bar .grid-container {
+        display: none; /* Hide the headers on mobile if you want a cleaner look, or stack them */
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
