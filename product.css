@@ -1,0 +1,223 @@
+/* --- GLOBAL STYLES --- */
+:root {
+    --glow-purple-dark: #6a1a9a; 
+    --glow-purple-medium: #8a3eb3; 
+    --glow-purple-light: #b373d8; 
+    --glow-text-color: #5d2595; 
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif, 'Kalnia', serif;
+    background-color: white;
+    color: #231c32;
+    overflow-x: hidden;
+}
+
+/* --- NAVBAR STYLES --- */
+.header-section {
+    background-color: #785cb3; 
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container img {
+   height: 80px; 
+   width: auto;
+   object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1); 
+}
+
+/* --- PRODUCT CARD STYLES --- */
+.products-heading {
+    color: var(--glow-text-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.product-card {
+    border: none;
+    border-radius: 0;
+    transition: box-shadow 0.3s;
+    height: 100%;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-box {
+    background-color: #785cb3 !important; /* Forces purple background */
+    padding: 1.5rem;
+    height: 250px; /* Fixed height for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image-box img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.card-title {
+    color: #5d2595;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.price-text {
+    color: #5d2595;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* Star Ratings */
+.star-rating {
+    color: #ffc107; /* Gold */
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.star-gray {
+    color: #ccc;
+}
+
+/* Add to Cart Buttons */
+.btn-add-cart {
+    background-color: #fce4ec; /* Light Pink */
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-add-cart:hover {
+    background-color: #f8bdd0; 
+    transform: scale(1.05);
+}
+
+.disabled-btn {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #eee;
+}
+
+/* --- FOOTER STYLES (ALIGNMENT FIX) --- */
+.glow-footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sub-banner {
+    background-color: #f8bdd0; /* Pink */
+    color: #6a1a9a; 
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.sub-banner-link {
+    text-decoration: none;
+}
+
+/* Wrapper Styles - Removing Padding to Fix Alignment */
+.header-bar, 
+.content-area {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+}
+
+/* Purple Header */
+.header-bar {
+    background-color: #5e4b8b;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Pink Grid Content Area */
+.content-area {
+    background-color: #fff0f5; 
+    background-image: 
+        linear-gradient(#ffccdb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffccdb 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Internal Container - Handles the actual alignment */
+.header-bar .container,
+.content-area .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Footer Typography */
+.label {
+    font-weight: 800;
+    display: block;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.contact-link, .info-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-link:hover, .info-links a:hover {
+    color: #5e4b8b;
+    text-decoration: underline;
+}
+
+.info-links li {
+    margin-bottom: 8px;
+}
