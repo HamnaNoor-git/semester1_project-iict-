@@ -1,0 +1,167 @@
+/* Custom properties for color consistency (optional but recommended) */
+:root {
+    --purple-main: #785cb3; 
+    --light-purple: #f0e6ff; 
+    --dark-purple: #330066; 
+    --footer-header-bar: #5e4b8b; /* Approximating the dark purple bar */
+    --footer-content-bg: #ffe4e1; /* Approximating the pink grid background, use a solid color for simplicity */
+    --link-color: #5e4b8b;
+}
+
+body {
+    font-family: 'Inter', sans-serif,'kalnia';
+    /* This creates the Pink Grid Background from your screenshot */
+    background-color: white;
+    
+    color: #231c32;
+    color:#9966cc;
+    overflow-x: hidden;
+
+}
+
+/* Navbar */
+.header-section {
+    background-color: #785cb3; /* The Purple Header */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+}
+
+.logo-container img {
+   height: 80px; /* Adjusts logo height properly */
+    width: auto;  /* Keeps the shape correct */
+    object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Navigation */
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1); /* Makes black icon white */
+}
+.fw-bold {
+    font-weight: 700 !important;
+    color:black;
+}
+
+
+.sub-banner-link {
+    text-decoration: none;
+    display: block;
+}
+
+.sub-banner {
+    /* Matches the pinkish banner at the top of the footer */
+    background-color: #f7a6b2; /* A shade of pink/light red */
+    color: #5e4b8b; /* Dark text color on the banner */
+    font-weight: bold;
+}
+.sub-banner p {
+    color: var(--dark-purple);
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* The Footer Container */
+.glow-footer {
+    width: 100%;
+}
+
+/* Contact us | Information | Copyright Bar */
+.header-bar {
+    background-color: var(--footer-header-bar); /* Dark Purple Bar */
+    color: white;
+    font-weight: 600;
+}
+
+/* The Content Area (Contact details & Info links) */
+.content-area {
+    /* Simulating the grid background with a light pink color */
+    background-color: var(--footer-content-bg); 
+    padding: 20px 0;
+}
+
+/* Contact Details Styling */
+.contact-group {
+    margin-bottom: 10px;
+}
+.label {
+    font-weight: 700; 
+    color: #000; /* Black Label */
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.contact-link, .text {
+    text-decoration: none;
+    color: #444; /* Dark gray text */
+    font-size: 0.9rem;
+    display: block; /* Make sure links/text break below the label */
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+/* Information Links Styling */
+.info-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-links li {
+    margin-bottom: 8px;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.info-links a:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    /* Adjusted the copyright alignment for better mobile view */
+    .copyright {
+        text-align: center !important; 
+        margin-top: 10px;
+    }
+}
