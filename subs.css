@@ -1,0 +1,183 @@
+/* --- GLOBAL VARIABLES & BASE --- */
+:root {
+    --glow-purple-dark: #6a1a9a; 
+    --glow-purple-medium: #8a3eb3; 
+    --glow-purple-light: #b373d8; 
+    --plan-bg: #8762b9;
+    --heading-color: #5d2595;
+}
+
+body {
+    font-family: 'Inter', sans-serif, 'Kalnia';
+    background-color: white;
+    /* Consistent Pink Grid Background */
+    background-image: 
+        linear-gradient(#ffccdb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffccdb 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: #231c32;
+    overflow-x: hidden;
+}
+
+/* --- HEADER/NAVBAR --- */
+.header-section {
+    background-color: #785cb3; 
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container img {
+   height: 80px; 
+   width: auto;
+   object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1);
+}
+
+/* --- SUBSCRIPTION CARDS --- */
+.subscription-heading {
+    color: var(--heading-color);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.plan-card {
+    background-color: var(--plan-bg);
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: var(--glow-purple-dark);
+    border-bottom: none;
+    padding: 1.5rem;
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+    letter-spacing: 1.5px;
+}
+
+.plan-features li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.plan-features li::before {
+    content: "•";
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Subscribe Button */
+.btn-subscribe {
+    background-color: #f8bdd0; /* Pink button to match theme */
+    color: #6a1a9a;
+    font-weight: 800;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-subscribe:hover {
+    background-color: #f5a3c0;
+    color: #4a0f73;
+}
+
+/* --- FOOTER STYLES (MATCHING CONTACT PAGE) --- */
+.glow-footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sub-banner {
+    background-color: #f8bdd0;
+    color: #6a1a9a; 
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.sub-banner-link { text-decoration: none; }
+
+.header-bar, .content-area {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+}
+
+.header-bar {
+    background-color: #5e4b8b;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.content-area {
+    background-color: #fff0f5; 
+    background-image: 
+        linear-gradient(#ffccdb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffccdb 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-bar .container, .content-area .container {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label { font-weight: 800; display: block; color: #000; margin-bottom: 2px; }
+.contact-link, .info-links a { text-decoration: none; color: #333; font-weight: 500; }
+.contact-link:hover, .info-links a:hover { color: #5e4b8b; text-decoration: underline; }
+.info-links li { margin-bottom: 8px; }
