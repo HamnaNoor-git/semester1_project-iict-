@@ -1,0 +1,281 @@
+/* Custom CSS to match the Glow Guide design */
+
+/* Variables for easy color management */
+:root {
+    --glow-purple-dark: #6a1a9a; 
+    --glow-purple-medium: #8a3eb3; 
+    --glow-purple-light: #b373d8; 
+    --glow-text-color: #5d2595; 
+    --white: #ffffff;
+    --doctor-card-bg: #9a65b8; /* A shade close to the profile card background */
+}
+
+/* --- Base/Reused Styles --- */
+body {
+    font-family: 'Inter', sans-serif,'kalnia';
+    /* This creates the Pink Grid Background from your screenshot */
+    background-color: white;
+    
+    color: #231c32;
+    color:#9966cc;
+    overflow-x: hidden;
+
+}
+
+/* Navbar */
+.header-section {
+    background-color: #785cb3; /* The Purple Header */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+}
+
+.logo-container img {
+   height: 80px; /* Adjusts logo height properly */
+    width: auto;  /* Keeps the shape correct */
+    object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Navigation */
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1); /* Makes black icon white */
+}
+.fw-bold {
+    font-weight: 700 !important;
+    color:black;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--glow-purple-medium); 
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+/* --- Contact Page Specific Styles --- */
+
+.contact-main {
+    /* Use padding instead of min-vh-100 for standard page content */
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+/* Doctor Profile Card Styling */
+.doctor-card {
+    background-color: var(--doctor-card-bg);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-details p {
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.doctor-img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--white); /* Placeholder background for the image */
+    object-fit: cover;
+    border: 3px solid var(--white);
+}
+
+.appointment-link {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: underline !important;
+}
+
+.appointment-link:hover {
+    color: #eee; /* Lighter hover color */
+}
+
+/* Product Hand Image (Right Column) */
+.product-hand-img {
+    max-height: 500px; /* Limit the height for visual appeal */
+    width: auto;
+}
+.grid-spacer {
+    height: 40px;
+    width: 100%;
+    /* Applying the grid pattern helper logic here */
+    background-color: #fff0f5;
+    background-image: 
+        linear-gradient(#ffc0cb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffc0cb 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+
+/* 1. Subscription Banner */
+.sub-banner-link {
+    text-decoration: none;
+}
+
+.sub-banner {
+    background-color: #f8b6ce; /* The specific pink from the screenshot */
+    color: #5e4b8b; /* Dark purple text */
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.sub-banner:hover {
+    background-color: #f5a3c0; /* Slight darken on hover */
+}
+
+/* 2. Header Bar (Purple) & 3. Content Area Layout */
+/* We use the same grid definition for both to ensure vertical alignment matches */
+.header-bar {
+    background-color: #5e4b8b; /* Deep Purple */
+    color: white;
+    padding: 12px 5%; /* Top/Bottom padding, 5% Side padding */
+}
+
+.content-area {
+    padding: 25px 5%;
+    /* Applying the grid pattern */
+    background-color: #fff0f5; 
+    background-image: 
+        linear-gradient(#ffc0cb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffc0cb 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+/* The Grid System: 3 Columns */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px;
+}
+
+/* Header Text Styling */
+.header-item {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.copyright {
+    text-align: right;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* Content Text Styling */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between Email, Phone, Address blocks */
+}
+
+/* Contact Details Styling */
+.contact-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: 700; /* Bold "Email:", "Phone:" */
+    color: #000;
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.contact-link, .text {
+    text-decoration: none;
+    color: #444; /* Dark gray text */
+    font-size: 0.9rem;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: #5e4b8b;
+}
+
+/* Information Links Styling */
+.info-links {
+    list-style: none;
+}
+
+.info-links li {
+    margin-bottom: 8px;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.info-links a:hover {
+    text-decoration: underline;
+    color: #5e4b8b;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack everything in 1 column on mobile */
+        gap: 30px;
+    }
+    
+    .header-bar .grid-container {
+        display: none; /* Hide the headers on mobile if you want a cleaner look, or stack them */
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .product-hand-img {
+        max-height: 300px;
+        margin-top: 2rem;
+    }
+}
