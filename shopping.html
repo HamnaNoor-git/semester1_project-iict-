@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Guide - Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+     <header class="header-section">
+        <div class="container-fluid px-4"> 
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="logo-container">
+                        <img src="logo.png" alt="Logo">
+                    </div>
+                    <div class="brand-text ms-3">
+                        <h1 class="brand-title">GLOW'GUIDE</h1>
+                        <p class="brand-subtitle">YOUR PATH TO GLOWING SKIN</p>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="../Home page/home.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Login page/login.html">LOG IN</a></li>
+
+                            <li class="nav-item">
+                                <div class="cart-icon position-relative">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Cart">
+                                    <span class="badge bg-warning text-dark position-absolute top-0 start-100 translate-middle rounded-circle" id="cartCount">0</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5 cart-page">
+        
+        <div class="cart-header p-3 mb-4 rounded-3 text-white text-center">
+            <h1 class="h5 mb-0 fw-bold text-uppercase">SHOPPING CART</h1>
+        </div>
+
+        <section class="mb-5 product-list">
+            <div class="row align-items-center cart-item p-3 mb-3">
+                
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="product-image-container p-3 bg-light-purple">
+                        <img src="berry.png" alt="Berry Mask" class="img-fluid cart-product-image">
+                    </div>
+                </div>
+
+                <div class="col-md-5 product-details mt-3 mt-md-0">
+                    <p class="product-name fw-bold mb-1">Product name: Berry mask</p>
+                    <p class="product-price fs-5 fw-bold text-dark-purple">Price: 1000</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-light-gray"></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 quantity-control d-flex justify-content-md-end mt-3 mt-md-0">
+                    <div class="input-group w-auto quantity-input-group me-3">
+                        <button class="btn btn-outline-secondary qty-btn" type="button" data-action="minus" aria-label="Decrease quantity">-</button>
+                        <input type="text" class="form-control text-center quantity-display" value="1" id="qty-1" data-price="1000" readonly>
+                        <button class="btn btn-outline-secondary qty-btn" type="button" data-action="plus" aria-label="Increase quantity">+</button>
+                    </div>
+                    
+                    <button class="btn btn-danger btn-sm me-2 delete-btn" aria-label="Remove item">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    
+                    <button class="btn btn-outline-secondary heart-btn" aria-label="Save for later">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            </section>
+
+        <section class="order-summary p-4 mb-5">
+            <h2 class="h5 fw-bold mb-3">Order Summary</h2>
+            <div class="row summary-item py-1">
+                <div class="col-8">Subtotal</div>
+                <div class="col-4 text-end" id="subtotal">Rs 1,000</div>
+            </div>
+            <div class="row summary-item py-1">
+                <div class="col-8">Shipping</div>
+                <div class="col-4 text-end" id="shipping">Rs 200</div>
+            </div>
+            <div class="row summary-item py-1 mb-2">
+                <div class="col-8">Tax</div>
+                <div class="col-4 text-end" id="tax">Rs 50</div>
+            </div>
+            
+            <div class="row summary-total py-3 mt-3">
+                <div class="col-8 fw-bold">Total</div>
+                <div class="col-4 text-end fw-bold fs-5" id="total">Rs 1,250</div>
+            </div>
+        </section>
+
+        <div class="d-flex justify-content-between cart-actions">
+            <a href="../skin type page/skintype.html" class="action-link continue-shopping">
+                <i class="fas fa-arrow-left"></i> Continue Shopping
+            </a>
+            <a href="../check out page/checkout.html" class="action-link check-out">
+                Check out <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+ 
+
+ <footer class="glow-footer">
+        
+        <a href="#subscribe" class="sub-banner-link">
+            <div class="sub-banner">
+                <a href="../dr page/dr.html" class="contact-link">GET SUBSCRIPTION FOR SKIN SPECIALIST CONCERN!!</a>
+            </div>
+        </a>
+
+        <div class="header-bar">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 fw-bold">Contact us</div>
+                    <div class="col-md-4 col-sm-6 fw-bold">Information</div>
+                    <div class="col-md-4 col-12 text-md-end copyright">
+                        &copy; 2025 Glow Guide. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="container"> 
+                <div class="row">
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="contact-group mb-3">
+                            <span class="label">Email:</span>
+                            <a href="mailto:support@glowguide.com" class="contact-link">support@glowguide.com</a>
+                        </div>
+                        <div class="contact-group mb-3">
+                            <span class="label">Phone:</span>
+                           <a href="https://web.whatsapp.com/" class="contact-link">+92-3066469246</a>
+                        </div>
+                        <div class="contact-group">
+                            <span class="label">Address:</span>
+                            <span class="text">Glow.Guide Studio</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                    <li><a href="../about us/about.html">About us</a></li>
+                            <li><a href="../contact page/contact.html">Customer care</a></li>
+                            <li><a href="../contact page/contact.html">FAQs</a></li>
+                            <li><a href="../contact page/contact.html">Contact form</a></li>
+                            <li><a href="../contact page/contact.html">Customer service information</a></li>
+                    </div>
+
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="shopping.js"></script>
+</body>
+</html>

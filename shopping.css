@@ -1,0 +1,235 @@
+/* Custom properties for color consistency */
+:root {
+    --purple-main: #9966cc; /* Header/Footer Purple */
+    --cart-header-purple: #755b99; /* Approximating the SHOPPING CART header background */
+    --light-purple: #f0e6ff; /* Approximating the product image background */
+     /* For strong accents/text */
+    --input-background: #e8e6f1; /* Light background for quantity input */
+    --total-background: #f0f0f0; /* Light background for Total row */
+}
+
+
+/* General Styling (Reused) */
+ody {
+    font-family: 'Inter', sans-serif, 'Kalnia', serif;
+    background-color: white;
+    color: #231c32;
+    overflow-x: hidden;
+}
+
+/* --- NAVBAR STYLES --- */
+.header-section {
+    background-color: #785cb3; 
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container img {
+   height: 80px; 
+   width: auto;
+   object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1); 
+}
+.footer-header-bar {
+    background-color: #9966cc;
+    color: white;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+/* Shopping Cart Specific Styling */
+
+/* Cart Header */
+.cart-header {
+    background-color: var(--cart-header-purple);
+    color: white;
+}
+
+/* Product Image Container */
+.product-image-container {
+    background-color: var(--light-purple);
+    border-radius: 10px;
+    padding: 1rem !important;
+}
+
+.cart-product-image {
+    max-width: 100px; /* Adjust size for cart view */
+    height: auto;
+}
+
+/* Order Summary */
+.order-summary {
+    border: 1px solid #ccc; /* Subtle border around the summary box */
+    border-radius: 8px;
+}
+
+.summary-total {
+    background-color: var(--total-background); /* Highlight the total row */
+}
+
+/* Quantity Control */
+.quantity-input-group {
+    max-width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Contains the buttons and input */
+    background-color: var(--input-background);
+}
+
+.qty-btn {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--dark-purple) !important;
+    font-weight: bold;
+}
+
+.quantity-display {
+    background-color: var(--input-background) !important;
+    border: none !important;
+    color: var(--dark-purple);
+    font-weight: bold;
+    padding: 0;
+}
+
+.heart-btn {
+    background-color: transparent !important;
+    border-color: #ccc !important;
+}
+
+/* Action Links */
+.cart-actions a {
+    color: var(--dark-purple);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s;
+}
+
+.cart-actions a:hover {
+    color: var(--purple-main);
+}
+
+.continue-shopping i {
+    margin-right: 5px;
+}
+.check-out i {
+    margin-left: 5px;
+}
+
+/* Subscription Banner */
+.subscription-banner {
+    background-color: #6a3d9a; 
+}
+/* Footer Styling (Reused) */
+.glow-footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sub-banner {
+    background-color: #f8bdd0; /* Pink */
+    color: #6a1a9a; 
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.sub-banner-link {
+    text-decoration: none;
+}
+
+/* Wrapper Styles - Removing Padding to Fix Alignment */
+.header-bar, 
+.content-area {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+}
+
+/* Purple Header */
+.header-bar {
+    background-color: #5e4b8b;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Pink Grid Content Area */
+.content-area {
+    background-color: #fff0f5; 
+    background-image: 
+        linear-gradient(#ffccdb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffccdb 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Internal Container - Handles the actual alignment */
+.header-bar .container,
+.content-area .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Footer Typography */
+.label {
+    font-weight: 800;
+    display: block;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.contact-link, .info-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-link:hover, .info-links a:hover {
+    color: #5e4b8b;
+    text-decoration: underline;
+}
+
+.info-links li {
+    margin-bottom: 8px;
+}
