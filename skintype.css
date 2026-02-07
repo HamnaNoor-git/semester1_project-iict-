@@ -1,0 +1,203 @@
+/* Custom CSS to match the Glow Guide design */
+
+/* Variables (Ensure these are present and consistent) */
+:root {
+    --glow-purple-dark: #6a1a9a; 
+    --glow-purple-medium: #8a3eb3; 
+    --glow-purple-light: #b373d8; 
+    --glow-text-color: #5d2595; 
+    --skin-type-header-bg: #8a3eb3; /* Medium purple for the selection box header */
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif,'kalnia';
+    /* This creates the Pink Grid Background from your screenshot */
+    background-color: white;
+  
+    background-size: 20px 20px;
+    color: #231c32;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+
+.header-section {
+    background-color: #785cb3; /* The Purple Header */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+}
+
+.logo-container img {
+   height: 80px; /* Adjusts logo height properly */
+    width: auto;  /* Keeps the shape correct */
+    object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Navigation */
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1); /* Makes black icon white */
+}
+
+
+
+
+
+/* Subscription Banner (Reused from login page) */
+.subscription-banner {
+    background-color: var(--glow-purple-light);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* --- Skin Type Page Specific Styles --- */
+
+.skin-type-heading {
+    color: var(--glow-text-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.skin-type-card {
+    border: none;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%; /* Ensures cards stretch equally if needed */
+}
+
+
+.skin-type-card .card-header {
+   background-color: #8a3eb3;
+    border-bottom: none;
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for interactivity */
+.skin-type-link:hover .card-header {
+    background-color: var(--glow-purple-dark);
+}
+
+.skin-img {
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+    display: block; /* Removes any default spacing below image */
+}
+.header-item {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+
+.copyright {
+    text-align: right;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* Content Text Styling */
+.sub-banner {
+    background-color: #f8bdd0; /* Pink */
+    color: #6a1a9a;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sub-banner-link {
+    text-decoration: none;
+}
+
+/* 2. The Purple Footer Header Bar */
+.footer-header-bar {
+    background-color: #4a2c5a; /* Dark Purple */
+    color: white;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* 3. The Content Area (Transparent so grid shows through) */
+.footer-content-area {
+    padding: 30px 0;
+    /* Grid background from body will show through here */
+}
+
+/* Footer Text Styling */
+.contact-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.contact-link, .text {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.info-links {
+    list-style: none;
+    padding: 0;
+}
+
+.info-links li {
+    margin-bottom: 10px;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Mobile Fix: Align copyright center on small screens */
+@media (max-width: 768px) {
+    .footer-header-bar .text-end {
+        text-align: center !important;
+        margin-top: 10px;
+    }
