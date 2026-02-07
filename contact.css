@@ -1,0 +1,198 @@
+/* --- GLOBAL STYLES --- */
+:root {
+    --purple-main: #9966cc; 
+    --input-purple: #9275B9; 
+    --dark-purple: #330066; 
+    --glow-text-color: #5d2595; 
+}
+
+body {
+    font-family: 'Inter', sans-serif, 'Kalnia';
+    background-color: white;
+    /* Pink Grid Background */
+    background-image: 
+        linear-gradient(#ffccdb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffccdb 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: #231c32;
+    overflow-x: hidden;
+}
+
+/* --- NAVBAR STYLES --- */
+.header-section {
+    background-color: #785cb3; 
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container img {
+   height: 80px; 
+   width: auto;
+   object-fit: contain;
+}
+
+.brand-text {
+    color: white;
+    line-height: 1;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    filter: invert(1);
+}
+
+/* --- CONTACT PAGE STYLES --- */
+.contact-title {
+    color: var(--dark-purple);
+    font-size: 2.5rem; 
+}
+
+.phone-icon {
+    font-size: 10rem; 
+    color: var(--input-purple); 
+    opacity: 0.8;
+}
+
+.contact-details p {
+    line-height: 1.2;
+}
+
+/* Form Styles */
+.form-group-custom {
+    margin-bottom: 2rem !important;
+}
+
+.form-control-custom {
+    background-color: var(--input-purple);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 10px; 
+    height: 55px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.message-textarea {
+    height: 150px; 
+    min-height: 100px;
+    resize: none; 
+}
+
+.form-control-custom::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+}
+
+.custom-submit-btn {
+    background-color: var(--dark-purple) !important;
+    border-color: var(--dark-purple) !important;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* --- FOOTER STYLES (ALIGNMENT FIXED) --- */
+.glow-footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sub-banner {
+    background-color: #f8bdd0; /* Pink */
+    color: #6a1a9a; 
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.sub-banner-link {
+    text-decoration: none;
+}
+
+/* Remove padding from colored bars so they go full width */
+.header-bar, 
+.content-area {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+}
+
+/* Purple Header Color */
+.header-bar {
+    background-color: #5e4b8b;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Pink Grid Content Area */
+.content-area {
+    background-color: #fff0f5; 
+    background-image: 
+        linear-gradient(#ffccdb 1px, transparent 1px), 
+        linear-gradient(90deg, #ffccdb 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Internal Container: ALIGNS THE TEXT */
+.header-bar .container,
+.content-area .container {
+    padding-left: 12px; /* Standard Bootstrap gutter */
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer Typography */
+.label {
+    font-weight: 800;
+    display: block;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.contact-link, .info-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-link:hover, .info-links a:hover {
+    color: #5e4b8b;
+    text-decoration: underline;
+}
+
+.info-links li {
+    margin-bottom: 8px;
+}
